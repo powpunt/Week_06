@@ -5,12 +5,14 @@ class Program
 {
     static void Main()
     {
-        sayHello();
+        int val = 999;
+        refMethod(ref val);
+        Console.WriteLine(val);
         Console.ReadLine();
     }
 
-    static void sayHello()
+    static void refMethod(ref int i)
     {
-        Console.WriteLine("Hello World.");
+        i = i + 1;
     }
 }
