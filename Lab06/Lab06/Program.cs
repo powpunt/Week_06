@@ -1,21 +1,24 @@
-﻿using System;
+﻿     using System;
 
-class Program
-{
-    static void Main()
-    {
-        int i;
-        Console.Write("Enter a Number : ");
-        i = int.Parse(Console.ReadLine());
-        if (i % 2 == 0)
-        {
-            Console.Write("Entered Number is an Even Number");
-            Console.Read();
+     namespace ConsoleApplication1
+     {
+         class Program
+         {
+             static void Main(string[] args)
+             {
+            int A, B, C, D, E, F,G ;
+          
+            Console.WriteLine("Enter Start");
+             B = int.Parse(Console.ReadLine());           
+            Console.WriteLine("Enter End");
+             A = int.Parse(Console.ReadLine());
+
         }
-        else
-        {
-            Console.Write("Entered Number is an Odd Number");
-            Console.Read();
-        }
+            static int Add(int i, int j)
+            {
+              i++;
+               j++;
+    return i + j;
+           }
     }
-}
+ } 
