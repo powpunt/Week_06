@@ -4,21 +4,21 @@
      {
          class Program
          {
-             static void Main(string[] args)
+             static void Main()
              {
-            int A, B, C, D, E, F,G ;
-          
-            Console.WriteLine("Enter Start");
-             B = int.Parse(Console.ReadLine());           
-            Console.WriteLine("Enter End");
-             A = int.Parse(Console.ReadLine());
+            int A;
+            Console.WriteLine("Enter weight");
+            A = int.Parse(Console.ReadLine());
+            check(ref A);
+
+            Console.ReadLine();
 
         }
-            static int Add(int i, int j)
+            static void check(ref int i)
             {
-              i++;
-               j++;
-    return i + j;
+            Console.WriteLine("Answer is");
+            Console.WriteLine(i / 1.60);
+           
            }
     }
  } 
